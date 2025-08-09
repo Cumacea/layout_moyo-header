@@ -1,10 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -44,7 +45,6 @@ body {
 .nav__list {
   display: flex;
   margin: 0;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
